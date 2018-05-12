@@ -1,0 +1,43 @@
+/*
+Theme Name: Simplelin Child Theme
+Theme URI: https://ninethemes.wordpress.com/2018/04/03/simplelin-pinlocal
+Author: Nine Themes
+Author URI: https://ninethemes.wordpress.com/
+Description: Simplelin is a Minimal and Clean WordPress Theme. Mobile-friendly (responsive), optimized for speed, and implements SEO (Search Engine Optimization) best practices.
+Version: 1.0.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: simplelin-pinlocal
+Tags: blog, education, portfolio, two-columns, right-sidebar, custom-logo, custom-menu, custom-header, custom-background, custom-colors
+
+This theme, like WordPress, is licensed under the GPL. Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url("../simplelin/style.css");
+
+html,body{
+	font-family: Lato, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: Lato, sans-serif;
+}
+a,a:hover,.breadcrumb a,.breadcrumb a:hover{
+	color:#44c7ff;
+	font-family: Lato, sans-serif;
+}
+.title-area{
+	display:none;
+}
+
+.custom-logo-link img{
+	padding:15px 0 5px;
+}
+.entry-title{
+	font-size: 30px;
+}
+.widget-title{
+	color:#0f4b59;
+	font-size: 21px;
+	border:none;
+	
+}
