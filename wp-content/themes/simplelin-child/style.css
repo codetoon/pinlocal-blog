@@ -1,10 +1,13 @@
 /*
 Theme Name: Simplelin Child Theme
-Theme URI: https://ninethemes.wordpress.com/2018/04/03/simplelin-pinlocal
-Author: Nine Themes
-Author URI: https://ninethemes.wordpress.com/
-Description: Simplelin is a Minimal and Clean WordPress Theme. Mobile-friendly (responsive), optimized for speed, and implements SEO (Search Engine Optimization) best practices.
-Version: 1.0.4
+
+Template: Simplelin
+
+Theme URI: https://ninethemes.wordpress.com/2018/04/03/simplelin
+Author: Regur Technology Solutions
+Author URI: http://www.regur.net/
+Description: Simplelin Child theme is a Minimal and Clean WordPress Theme based on Simplelin Theme
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: simplelin-pinlocal
@@ -13,7 +16,6 @@ Tags: blog, education, portfolio, two-columns, right-sidebar, custom-logo, custo
 This theme, like WordPress, is licensed under the GPL. Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import url("../simplelin/style.css");
 
 html,body{
 	font-family: Lato, sans-serif;
@@ -24,6 +26,24 @@ h1, h2, h3, h4, h5, h6{
 a,a:hover,.breadcrumb a,.breadcrumb a:hover{
 	color:#44c7ff;
 	font-family: Lato, sans-serif;
+}
+button{
+	background:#00c572;
+}
+.read-more{
+	width: 150px;
+    max-width: 150px;
+    height: 43px;
+	font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+	font-family:Lato, sans-serif;
+    padding: 12px 12px;
+    transition: background-color 0.6s, color 0.6s;
+}
+.read-more:hover{
+	background:#44c7ff;
+	border-color:#204d74;
 }
 .title-area{
 	display:none;
@@ -40,4 +60,63 @@ a,a:hover,.breadcrumb a,.breadcrumb a:hover{
 	font-size: 21px;
 	border:none;
 	
+}
+
+
+/*-----footer style---*/
+footer{
+	background:#fff;
+}
+.footer-grow{
+	background: rgb(16, 71, 93);
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    background-image: url(images/grow_arr.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    clear: both;
+}
+.footer-grow .container {
+    background-image: url(images/pin.png);
+    background-repeat: no-repeat;
+    background-position: 365px 20px;
+    padding-top: 60px;
+	height:200px;
+	width:1170px;
+    padding-bottom: 40px;
+}
+.site-footer .site-info{
+	margin:0;
+	background:#fff;
+	height:auto;
+    padding-bottom: 15px;
+	border-top: 8px solid #44c7ff;
+    clear: both;
+}
+.site-info .container{
+	max-width:1100px;
+}
+.site-info #secondary{
+	float:left;
+	width:416px;
+	text-align: left;
+}
+.site-info .widget{
+	background:none;
+}
+.textwidget p{
+	font-style: italic;
+	margin-bottom: 15px;
+}
+footer p{
+	color:#323232;
+}
+.site-footer .site-info a,.site-footer .site-info a:hover{
+	color:#323232;
+	font-weight: 300;
+	font-style:normal;
+}
+
+.site-footer .site-info a:hover{
+	text-decoration:underline;
 }
