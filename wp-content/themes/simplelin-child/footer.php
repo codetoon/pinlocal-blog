@@ -16,7 +16,16 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-grow">
 			<div class="container">
-			
+				<div class="pad">
+					 <div class="col1">
+						<h4>Grow your business</h4>
+						<p>Find out how PinLocal can grow your business.</p>
+					  </div>
+
+					  <div class="col2">
+						<a href="/register/leadcategories" title="Get Started"><button>Get Started</button></a>
+					  </div>
+				</div>
 			</div>
 		</div>
 		<div class="site-info">
@@ -26,10 +35,12 @@
 				<?php get_sidebar('footer'); ?>
 				
 				<?php get_sidebar('footer'); ?>
-				
-			
-				
-				
+			</div><!-- .site-container -->
+		</div><!-- .site-info -->
+		
+		<div class="site-info-text">
+			<div class="container">
+				<?php simplelin_footer_site_info(); ?>
 			</div><!-- .site-container -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

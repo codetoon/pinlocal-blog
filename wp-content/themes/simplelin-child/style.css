@@ -84,6 +84,42 @@ footer{
 	height:200px;
     padding-bottom: 40px;
 }
+.footer-grow  .pad{
+	padding: 0 130px;
+}
+.footer-grow  .col1{
+	width: 58.33333%;
+	float:left;
+}
+.footer-grow  .col1 h4{
+	font-size: 35px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 10px;
+    font-weight: 800;
+	
+}
+.footer-grow  .col1 p{
+	color:#fff;
+	margin: 0 0 10px;
+	
+}
+.footer-grow  .col2{
+	width: 41.66667%;
+	float:left;
+	text-align: right;
+	
+}
+.col2 button{
+	background:#00c572;
+    font-size: 19px;
+    min-width: 230px;
+    padding: 18px 12px;
+    height: 65px;
+	text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+	margin-top: 5px;
+}
 .site-footer .site-info{
 	margin:0;
 	background:#fff;
@@ -93,7 +129,13 @@ footer{
 	border-top: 8px solid #44c7ff;
     clear: both;
 }
-
+.site-info-text{
+	background:#fff;
+	color:#323232;
+	clear: both;
+    text-align: center;
+	padding:20px 0px 35px;
+}
 .site-info #secondary{
 	float:left;
 	/* width:416px; */
@@ -136,6 +178,84 @@ footer p{
 .widget .footer-list li{
 	margin-bottom:2px;
 }
+.footer-list .fa{
+	color:#44c7ff;
+	font-size: 20px;
+	padding-right: 15px;
+	
+}
+.site-info-text .copyright, .credit{
+	font-size: 13px;
+    text-transform: uppercase;
+    color: #333333;
+    line-height: 15.6px;	
+}
+.site-info-text a, .site-info-text a:hover{
+	color: #333333;
+}
+.site-info-text a:hover{
+	text-decoration:underline;
+}
+
+
+/*---- Media Query----- */
+
+@media screen and (max-width: 767px) {
+	.footer-grow .container{
+		width:90%;
+	}
+	.footer-grow .pad{
+		padding:0;
+	}
+	.footer-grow .col1,.footer-grow .col2{
+		width:100%;
+		
+	}
+	.footer-grow .col1 h4{
+		font-size:25px;
+	}
+	.footer-grow .col2{
+		text-align:center;
+	}
+	.footer-grow .container{
+		height:280px;
+	}
+	.footer-grow .col1 p{
+		margin: 0 0 20px;
+	}
+	.widget{
+		padding:15px 15px;
+		margin:0;
+		text-align: center;		
+	}
+	section#text-2{
+		padding: 15px 15px 0;
+	}
+	.site-info #secondary.widget-area-link{
+		width:100%;
+	}
+	.title{
+		margin:0 0 15px	;
+	}
+	.footer-list{
+		text-align: left;
+		display: inline-block;
+		
+	}
+	
+	@media screen and (max-width: 990px) {
+	.footer-grow .pad{
+		padding:0;
+		}
+	}
+	
+	
+	
+	
+}
+
+
+
 
 
 
