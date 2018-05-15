@@ -25,7 +25,7 @@ function simplelin_pinlocal_widgets_init() {
   ) );
   
    register_sidebar( array(
-    'name'          => esc_html__( 'Sidebar Footer Menu', 'simplelin-pinlocal'),
+    'name'          => esc_html__( 'Sidebar Footer Link', 'simplelin-pinlocal'),
     'id'            => 'sidebar-3',
     'description'   => esc_html__( 'Add widgets here.', 'simplelin-pinlocal' ),
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -33,6 +33,18 @@ function simplelin_pinlocal_widgets_init() {
     'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ) );
+  
+  register_sidebar( array(
+    'name'          => esc_html__( 'Sidebar Footer List', 'simplelin-pinlocal'),
+    'id'            => 'sidebar-4',
+    'description'   => esc_html__( 'Add widgets here.', 'simplelin-pinlocal' ),
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+  ) );
+  
+  
 }
 
 add_action( 'widgets_init', 'simplelin_pinlocal_widgets_init' );

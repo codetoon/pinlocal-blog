@@ -23,8 +23,13 @@
 			<div class="container">
 				<?php get_sidebar('footer'); ?>
 				
+				<?php get_sidebar('footer'); ?>
 				
-
+				<?php get_sidebar('footer'); ?>
+				
+			
+				
+				
 			</div><!-- .site-container -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

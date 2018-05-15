@@ -82,23 +82,21 @@ footer{
     background-position: 365px 20px;
     padding-top: 60px;
 	height:200px;
-	width:1170px;
     padding-bottom: 40px;
 }
 .site-footer .site-info{
 	margin:0;
 	background:#fff;
+	color:#323232;
 	height:auto;
-    padding-bottom: 15px;
+    padding:0px 0px 15px;
 	border-top: 8px solid #44c7ff;
     clear: both;
 }
-.site-info .container{
-	max-width:1100px;
-}
+
 .site-info #secondary{
 	float:left;
-	width:416px;
+	/* width:416px; */
 	text-align: left;
 }
 .site-info .widget{
@@ -120,3 +118,25 @@ footer p{
 .site-footer .site-info a:hover{
 	text-decoration:underline;
 }
+.site-info #secondary.widget-area-link{
+	width:250px;
+}
+.title{
+	margin-bottom:40px;
+	text-transform:uppercase;
+}
+.widget ul{
+	font-weight: 300;
+}
+.widget ul li{
+	border-top:none;
+	padding:0;
+	line-height:19.2px;
+}
+.widget .footer-list li{
+	margin-bottom:2px;
+}
+
+
+
+
