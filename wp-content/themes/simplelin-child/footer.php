@@ -23,7 +23,7 @@
 					  </div>
 
 					  <div class="col2">
-						<a href="/register/leadcategories" title="Get Started"><button>Get Started</button></a>
+						<a href="http://pinlocal.com/register/leadcategories" title="Get Started"><button>Get Started</button></a>
 					  </div>
 				</div>
 			</div>
@@ -32,9 +32,6 @@
 			<div class="container">
 				<?php get_sidebar('footer'); ?>
 				
-				<?php get_sidebar('footer'); ?>
-				
-				<?php get_sidebar('footer'); ?>
 			</div><!-- .site-container -->
 		</div><!-- .site-info -->
 		

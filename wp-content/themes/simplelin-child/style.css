@@ -29,6 +29,7 @@ a,a:hover,.breadcrumb a,.breadcrumb a:hover{
 }
 button{
 	background:#00c572;
+	font-family:Lato, sans-serif;
 }
 .read-more{
 	width: 150px;
@@ -45,12 +46,32 @@ button{
 	background:#44c7ff;
 	border-color:#204d74;
 }
-.title-area{
-	display:none;
+.button-area{
+	float:right;
+	padding: 20px 0;
 }
-
-.custom-logo-link img{
-	padding:15px 0 5px;
+.button-area button{
+	width:150px;
+	height: 43px;
+}
+.button-area button.contact{
+	width:auto;
+	border: 1px solid rgb(68, 199, 255);
+    color: rgb(68, 199, 255);
+    background-color: rgb(255, 255, 255);
+	padding: 9px 15px;
+	margin-left: 10px;
+}
+.button-area button.contact:hover{
+	background-color: rgb(68, 199, 255);
+    color: rgb(255, 255, 255);
+}
+.button-area .small{
+	font-weight: normal;
+	text-transform:none;
+}
+.contact .fa{
+	margin-right:2px;
 }
 .entry-title{
 	font-size: 30px;
@@ -79,13 +100,13 @@ footer{
 .footer-grow .container {
     background-image: url(images/pin.png);
     background-repeat: no-repeat;
-    background-position: 365px 20px;
-    padding-top: 60px;
+    background-position: 325px 20px;
+    padding-top: 70px;
 	height:200px;
     padding-bottom: 40px;
 }
 .footer-grow  .pad{
-	padding: 0 130px;
+	padding: 0 105px;
 }
 .footer-grow  .col1{
 	width: 58.33333%;
@@ -120,6 +141,9 @@ footer{
     font-family: "Lato", sans-serif;
 	margin-top: 5px;
 }
+button:hover{
+	background:#44c7ff;
+}
 .site-footer .site-info{
 	margin:0;
 	background:#fff;
@@ -136,21 +160,27 @@ footer{
     text-align: center;
 	padding:20px 0px 35px;
 }
+.site-info .container{
+	width:1000px;
+}
 .site-info #secondary{
 	float:left;
-	/* width:416px; */
 	text-align: left;
+}
+.site-info #secondary.widget-area{
+	width:416px;
 }
 .site-info .widget{
 	background:none;
 }
 .textwidget p{
 	font-style: italic;
-	margin-bottom: 15px;
+	margin:5px 0px 15px;
 }
 footer p{
 	color:#323232;
 }
+
 .site-footer .site-info a,.site-footer .site-info a:hover{
 	color:#323232;
 	font-weight: 300;
@@ -161,27 +191,41 @@ footer p{
 	text-decoration:underline;
 }
 .site-info #secondary.widget-area-link{
-	width:250px;
+	width:230px;
 }
-.title{
-	margin-bottom:40px;
+.widget_nav_menu h3.widget-title, .widget_custom_html h3.widget-title{
 	text-transform:uppercase;
+	color:#323232;
+	font-size: 18px;
+	margin-bottom: 30px;
+	
+} 
+.widget_nav_menu .menu{
+	display:block;
 }
+
 .widget ul{
 	font-weight: 300;
 }
 .widget ul li{
+	position: relative;
+    padding:0 0 0 30px;
+    margin-bottom: 2px;
 	border-top:none;
-	padding:0;
 	line-height:19.2px;
+}
+.widget-area-link .widget ul li{
+	padding:0;
 }
 .widget .footer-list li{
 	margin-bottom:2px;
 }
 .footer-list .fa{
+	position: absolute;
+    font-size: 20px;
+    top: 3px;
+    left: 0px;
 	color:#44c7ff;
-	font-size: 20px;
-	padding-right: 15px;
 	
 }
 .site-info-text .copyright, .credit{
@@ -196,11 +240,47 @@ footer p{
 .site-info-text a:hover{
 	text-decoration:underline;
 }
-
-
+ .site-info .widget{
+		padding:40px 20px 20px;
+	} 
+ .site-info .widget_media_image{
+	 padding-bottom:0;
+	 margin:0;
+ }
+ #custom_html-2.widget{
+	 padding-top:0;
+ }
 /*---- Media Query----- */
+@media screen and (max-width: 990px) {
+	.title-area{
+		float:left;
+	}
+	.footer-grow .pad{
+		padding:0;
+		}
+	.site-info .container{
+		width:90%;
+	}
+	.site-info #secondary.widget-area{
+		width:280px;
+	}
+	.site-info #secondary.widget-area-link{
+		width:120px;
+	}
+	.site-info #secondary.widget-area-list{
+		width:280px;
+	}
+	
+}
 
 @media screen and (max-width: 767px) {
+	.button-area{
+		display:none;
+	}
+	.title-area {
+		float: none;
+	}
+	
 	.footer-grow .container{
 		width:90%;
 	}
@@ -223,33 +303,39 @@ footer p{
 	.footer-grow .col1 p{
 		margin: 0 0 20px;
 	}
-	.widget{
-		padding:15px 15px;
+	.site-info .widget{
+		padding: 40px 0px 0px;
 		margin:0;
 		text-align: center;		
 	}
+	 .site-info .container{
+		width:90%;
+	} 
+
 	section#text-2{
 		padding: 15px 15px 0;
 	}
-	.site-info #secondary.widget-area-link{
+	.site-info #secondary.widget-area,
+	.site-info #secondary.widget-area-link,
+	.site-info #secondary.widget-area-list{
 		width:100%;
 	}
-	.title{
-		margin:0 0 15px	;
+	
+	.widget_nav_menu h3.widget-title{
+		margin:0px 0px 10px;
 	}
+	
 	.footer-list{
 		text-align: left;
 		display: inline-block;
 		
 	}
-	
-	@media screen and (max-width: 990px) {
-	.footer-grow .pad{
-		padding:0;
-		}
+	.site-info-text .copyright, .credit{
+		font-size:10px;
 	}
-	
-	
+	.site-info-text{
+		padding:60px 0px 35px;
+	}
 	
 	
 }
