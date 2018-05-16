@@ -46,6 +46,9 @@ button{
 	background:#44c7ff;
 	border-color:#204d74;
 }
+/* .title-area{
+	display:none;
+} */
 .button-area{
 	float:right;
 	padding: 20px 0;
