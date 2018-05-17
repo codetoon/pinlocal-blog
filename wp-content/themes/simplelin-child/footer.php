@@ -37,7 +37,7 @@
 		
 		<div class="site-info-text">
 			<div class="container">
-				<?php simplelin_footer_site_info(); ?>
+				<?php simplelin_child_footer_site_info(); ?>
 			</div><!-- .site-container -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

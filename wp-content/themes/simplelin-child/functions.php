@@ -8,8 +8,6 @@ function simplelin_pinlocal_enqueue_parent_styles() {
 
 /**
  * Register widget area.
- *
- * @link https://developer.wordpress.or/themes/functionality/sidebars/#registering-a-sidebar
  */
 function simplelin_pinlocal_widgets_init() {
 	
@@ -48,4 +46,24 @@ function simplelin_pinlocal_widgets_init() {
 }
 
 add_action( 'widgets_init', 'simplelin_pinlocal_widgets_init' );
+
+
+function simplelin_child_footer_site_info() {
+	
+	$tc_link = '<a href="' . 'http://pinlocal.com/terms.html' . '" target="_blank" title="' . esc_attr__( 'Theme for WordPress', 'simplelin_child' ) .'">' . __( 'Tearms & Conditions', 'Tearms & Conditions' ) . '</a>';
+	
+	$cd_link = '<a href="' . 'http://pinlocal.com/privacy.html' . '" target="_blank" title="' . esc_attr__( 'Theme for WordPress', 'simplelin_child' ) .'">' . __( 'Privacy Policy', 'Privacy Policy' ) . '</a>';
+
+	$tg_link = '<a href="' . 'http://pinlocal.com/affiliates.html' . '" target="_blank" rel="designer">' . __( 'Affiliates', 'simplelin_child' ) . '</a>';
+
+	$default_footer_value = '<div class="credit">' . sprintf($tc_link) . '&nbsp;.&nbsp;' . sprintf($cd_link ) . '&nbsp;.&nbsp;'  . sprintf($tg_link ) . '</div><div class="copyright">' . sprintf( __( 'Copyright &copy; %1$s %2$s', 'simplelin_child' ), date( 'Y' ),'Pinlocal') . '</div>';
+
+	echo $default_footer_value;
+}
+
+
+
+
+
+
 ?>
