@@ -62,7 +62,17 @@ function simplelin_child_footer_site_info() {
 }
 
 
-
+add_filter( 'get_custom_logo', 'child_custom_logo' );
+function child_custom_logo() {
+    $custom_logo_id = get_theme_mod( 'custom_logo' );
+    $html = sprintf( '<a href="%1$s" class="custom-logo-link" rel="home" itemprop="url">%2$s</a>',
+            esc_url( 'http://pinlocal.com/' ),
+            wp_get_attachment_image( $custom_logo_id, 'full', false, array(
+                'class'    => 'custom-logo',
+            ) )
+        );
+    return $html;   
+} 
 
 
 
