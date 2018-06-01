@@ -1,0 +1,384 @@
+/*
+Theme Name: Simplelin Child Theme
+
+Template: Simplelin
+
+Theme URI: https://ninethemes.wordpress.com/2018/04/03/simplelin
+Author: Regur Technology Solutions
+Author URI: http://www.regur.net/
+Description: Simplelin Child theme is a Minimal and Clean WordPress Theme based on Simplelin Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: simplelin-pinlocal
+Tags: blog, education, portfolio, two-columns, right-sidebar, custom-logo, custom-menu, custom-header, custom-background, custom-colors
+
+This theme, like WordPress, is licensed under the GPL. Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+html,body{
+	font-family: Lato, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: Lato, sans-serif;
+}
+a,a:hover,.breadcrumb a,.breadcrumb a:hover{
+	color:#44c7ff;
+	font-family: Lato, sans-serif;
+}
+button{
+	background:#00c572;
+	font-family:Lato, sans-serif;
+}
+.read-more{
+	width: 150px;
+    max-width: 150px;
+    height: 43px;
+	font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+	font-family:Lato, sans-serif;
+    padding: 12px 12px;
+    transition: background-color 0.6s, color 0.6s;
+}
+.read-more:hover{
+	background:#44c7ff;
+	border-color:#204d74;
+}
+.custom-logo-link img{
+	padding: 10px 0 0px;
+}
+.title-area{
+	display:none;
+}
+.button-area{
+	float:right;
+	padding: 20px 0;
+}
+.button-area button{
+	width:150px;
+	height: 43px;
+}
+.button-area button.contact{
+	width:auto;
+	border: 1px solid rgb(68, 199, 255);
+	border: 1px solid rgb(68, 199, 255);
+    color: rgb(68, 199, 255);
+    background-color: rgb(255, 255, 255);
+	padding: 9px 15px;
+	margin-left: 10px;
+}
+.button-area button.contact:hover{
+	background-color: rgb(68, 199, 255);
+    color: rgb(255, 255, 255);
+}
+.button-area .small{
+	font-weight: normal;
+	text-transform:none;
+}
+.contact .fa{
+	margin-right:2px;
+}
+.entry-title{
+	font-size: 30px;
+}
+.entry-title a:hover{
+	color:#333333;
+}
+
+.widget-title{
+	color:#0f4b59;
+	font-size: 21px;
+	border:none;
+	
+}
+
+
+/*-----footer style---*/
+footer{
+	background:#fff;
+}
+.footer-grow{
+	background: rgb(16, 71, 93);
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    background-image: url(images/grow_arr.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    clear: both;
+}
+.footer-grow .container {
+    background-image: url(images/pin.png);
+    background-repeat: no-repeat;
+    background-position: 325px 20px;
+    padding-top: 70px;
+	height:200px;
+    padding-bottom: 40px;
+}
+.footer-grow  .pad{
+	padding: 0 105px;
+}
+.footer-grow  .col1{
+	width: 58.33333%;
+	float:left;
+}
+.footer-grow  .col1 h4{
+	font-size: 35px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 10px;
+    font-weight: 800;
+	
+}
+.footer-grow  .col1 p{
+	color:#fff;
+	margin: 0 0 10px;
+	
+}
+.footer-grow  .col2{
+	width: 41.66667%;
+	float:left;
+	text-align: right;
+	
+}
+.col2 button{
+	background:#00c572;
+    font-size: 19px;
+    min-width: 230px;
+    padding: 18px 12px;
+    height: 65px;
+	text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+	margin-top: 5px;
+}
+button:hover{
+	background:#44c7ff;
+}
+.site-footer .site-info{
+	margin:0;
+	background:#fff;
+	color:#323232;
+	height:auto;
+    padding:0px 0px 15px;
+	border-top: 8px solid #44c7ff;
+    clear: both;
+}
+.site-info-text{
+	background:#fff;
+	color:#323232;
+	clear: both;
+    text-align: center;
+	padding:20px 0px 35px;
+}
+.site-info .container{
+	width:1000px;
+}
+.site-info #secondary{
+	float:left;
+	text-align: left;
+}
+.site-info #secondary.widget-area{
+	width:416px;
+}
+.site-info .widget{
+	background:none;
+}
+.textwidget p{
+	font-style: italic;
+	margin:5px 0px 15px;
+}
+footer p{
+	color:#323232;
+}
+
+.site-footer .site-info a,.site-footer .site-info a:hover{
+	color:#323232;
+	font-weight: 300;
+	font-style:normal;
+}
+
+.site-footer .site-info a:hover{
+	text-decoration:underline;
+}
+.site-info #secondary.widget-area-link{
+	width:230px;
+}
+.widget_nav_menu h3.widget-title, .widget_custom_html h3.widget-title{
+	text-transform:uppercase;
+	color:#323232;
+	font-size: 18px;
+	margin-bottom: 30px;
+	
+} 
+.widget_nav_menu .menu{
+	display:block;
+}
+
+.widget ul{
+	font-weight: 300;
+}
+.widget ul li{
+	position: relative;
+    padding:0 0 0 30px;
+    margin-bottom: 2px;
+	border-top:none;
+	line-height:19.2px;
+}
+.widget-area-link .widget ul li{
+	padding:0;
+}
+.widget .footer-list li{
+	margin-bottom:2px;
+}
+.footer-list .fa{
+	position: absolute;
+    font-size: 20px;
+    top: 3px;
+    left: 0px;
+	color:#44c7ff;
+	
+}
+.site-info-text .copyright, .credit{
+	font-size: 13px;
+    text-transform: uppercase;
+    color: #333333;
+    line-height: 15.6px;	
+}
+.site-info-text a, .site-info-text a:hover{
+	color: #333333;
+}
+.site-info-text a:hover{
+	text-decoration:underline;
+}
+ .site-info .widget{
+		padding:40px 20px 20px;
+	} 
+ .site-info .widget_media_image{
+	 padding-bottom:0;
+	 margin:0;
+ }
+ #custom_html-2.widget{
+	 padding-top:0;
+ }
+ input[type="submit"]{
+	 background:#00c572;
+	 font-family:Lato, sans-serif;
+ }
+ input[type="submit"]:hover{
+	 background:#44c7ff;
+ }
+ 
+/*---- Pagination ----- */
+.page-numbers{
+	background:#00c572;
+}
+.page-numbers:hover{
+	background:#44c7ff;	
+}
+.pagination .page-numbers.current{
+	border:1px solid #44c7ff;	
+	background:#fff;
+	color:#44c7ff !important;
+}
+/*---- Media Query ----- */
+@media screen and (max-width: 990px) {
+	.site-logo{
+		float:left;
+	}
+	.custom-logo-link img{
+		padding: 20px 0 0px;
+	}
+	.footer-grow .pad{
+		padding:0;
+	}
+	.site-info .container{
+		width:90%;
+	}
+	.site-info #secondary.widget-area{
+		width:280px;
+	}
+	.site-info #secondary.widget-area-link{
+		width:120px;
+	}
+	.site-info #secondary.widget-area-list{
+		width:280px;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {
+	.button-area{
+		display:none;
+	}
+	.site-logo {
+		float: none;
+	}
+	.custom-logo-link img{
+		padding: 10px 0 0px;
+	}
+	.footer-grow .container{
+		width:90%;
+	}
+	.footer-grow .pad{
+		padding:0;
+	}
+	.footer-grow .col1,.footer-grow .col2{
+		width:100%;
+		
+	}
+	.footer-grow .col1 h4{
+		font-size:25px;
+	}
+	.footer-grow .col2{
+		text-align:center;
+	}
+	.footer-grow .container{
+		height:280px;
+	}
+	.footer-grow .col1 p{
+		margin: 0 0 20px;
+	}
+	.site-info .widget{
+		padding: 40px 0px 0px;
+		margin:0;
+		text-align: center;		
+	}
+	 .site-info .container{
+		width:90%;
+	} 
+
+	section#text-2{
+		padding: 15px 15px 0;
+	}
+	.site-info #secondary.widget-area,
+	.site-info #secondary.widget-area-link,
+	.site-info #secondary.widget-area-list{
+		width:100%;
+	}
+	
+	.widget_nav_menu h3.widget-title{
+		margin:0px 0px 10px;
+	}
+	
+	.footer-list{
+		text-align: left;
+		display: inline-block;
+		
+	}
+	.site-info-text .copyright, .credit{
+		font-size:10px;
+	}
+	.site-info-text{
+		padding:60px 0px 35px;
+	}
+	
+	
+}
+
+
+
+
+
+
+
